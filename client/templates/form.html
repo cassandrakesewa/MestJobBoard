@@ -1,0 +1,58 @@
+<template name="form">
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Fill this Form</h4>
+        </div>
+        <form>
+          <div class="modal-body">
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Job Title</label>
+              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Jobs title" name="title">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputJobtype">Job Type</label>
+              <input type="text" class="form-control" id="exampleInputJobtype" placeholder="Jobs type" name="jobtype">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputJoblocation">Job location: </label>
+              <input type="text" class="form-control" id="exampleInputJoblocation" placeholder="Job Location" name="location">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputJobsummary">Job Summary: </label>
+              <input type="text" class="form-control" id="exampleInputJobsummary" placeholder="Job Summary" name="summary">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputContactdetails">Contact Details </label>
+              <input type="text" class="form-control" id="exampleInputContactdetails" placeholder="Contact Details" name="details">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputFile">File input</label>
+              <input type="file" id="exampleInputFile">
+
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+
+        </form>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+</template>

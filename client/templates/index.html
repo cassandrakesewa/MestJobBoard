@@ -1,0 +1,39 @@
+<template name="index">
+
+  <div class="slide">
+    {{> slider}}
+
+    <div class="container">
+      <div>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">POST JOB</button>
+      </div>
+      <br/><br/><br/>
+      <div>
+        <a href="#show"><button type="button" class="btn btn-danger btn-lg" > FIND JOB</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="container list">
+
+    <div class="row">
+      <div class="col-sm-12
+      ">
+      {{#if currentUser}}
+      {{> form}}
+      {{else}}
+      
+      {{> infomodal}}
+
+      {{/if}}
+      <div id="show">
+        {{> showlist}}
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+  {{> footer}}
+</div>
+</template>

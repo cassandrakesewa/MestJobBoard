@@ -1,0 +1,36 @@
+<template name="showlist">
+  <div class="panel panel-primary">
+    <div class="panel-heading"><h2 class="text-center">
+      Job Listings
+    </h2></div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th colspan="3">Job Title</th>
+            <th>Email</th>
+            <th colspan="2">Job Type</th>
+            <th colspan="3">Job summary</th>
+            <th>Job location</th>
+            <th>Contact</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each things}}
+          <tr>
+            <td colspan="3">{{jobtitle}}</td>
+            <td>{{email}}</td>
+            <td colspan="2">{{jobtype}}</td>
+            <td colspan="3">{{jobsummary}}</td>
+            <td>{{joblocation}}</td>
+            <td>{{contactdetails}}</td>
+            <td><button type="button" class="btn btn-primary">Apply Now</button></td>
+          </tr>
+
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</template>

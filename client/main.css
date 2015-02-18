@@ -1,0 +1,32 @@
+ul
+{
+  list-style: none;
+}
+.slide .container{
+  text-align: center;
+}
+
+.slide .container .btn{
+  position: relative;
+  margin-top: -730px;
+  margin-bottom: 40px;
+  width: 250px !important;
+}
+
+
+.slideimg{
+  width: 100%;
+  height: 650px !important;
+}
+
+.list{
+  margin-top: -50px;
+}
+
+footer{
+  height: 50px;
+  background-color: #286090;
+  color: #fff;
+  margin-top: 50px;
+
+}
