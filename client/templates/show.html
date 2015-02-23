@@ -25,7 +25,8 @@
             <td colspan="3">{{jobsummary}}</td>
             <td>{{joblocation}}</td>
             <td>{{contactdetails}}</td>
-            <td><button type="button" class="btn btn-primary">Apply Now</button></td>
+            <td><a href="{{pathFor 'insertJobForm' id=_id}}" type="button" class="btn btn-primary">Apply Now</a>
+            </td>
           </tr>
 
           {{/each}}

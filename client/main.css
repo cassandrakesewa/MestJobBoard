@@ -23,6 +23,14 @@ ul
   margin-top: -50px;
 }
 
+.jobinfo{
+  width: 95%;
+}
+
+.center{
+  width: 100%;
+}
+
 footer{
   height: 50px;
   background-color: #286090;
