@@ -16,7 +16,8 @@ Template.form.events({
       jobtype: $("[name='jobtype']").val(),
       jobsummary: $("[name='summary']").val(),
       joblocation: $("[name='location']").val(),
-      contactdetails: $("[name='details']").val()
+      contactdetails: $("[name='details']").val(),
+      userId: Meteor.userId()
     }
 
     //Check that 'name' is not an empty string
@@ -35,3 +36,7 @@ Template.form.events({
     $('input[type=text]').val('');
   }
 });
+
+Template.registerHelper('isOwner',function(){
+    return Meteor.userId();
+})
