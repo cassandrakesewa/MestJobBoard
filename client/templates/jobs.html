@@ -3,25 +3,32 @@
   <table class="table table-striped">
     <thead>
       <tr>
-        <th colspan="3">Job Title</th>
+        <th colspan="2">Job Title</th>
         <th>Email</th>
         <th colspan="2">Job Type</th>
-        <th colspan="3">Job summary</th>
+        <th colspan="2">Job summary</th>
         <th>Job location</th>
         <th>Contact</th>
-        <th>Action</th>
+        <th colspan="3">Action</th>
       </tr>
     </thead>
     <tbody>
       {{#each thing}}
       <tr>
-        <td colspan="3">{{jobtitle}}</td>
+        <td colspan="2">{{jobtitle}}</td>
         <td>{{email}}</td>
         <td colspan="2">{{jobtype}}</td>
-        <td colspan="3">{{jobsummary}}</td>
+        <td colspan="2">{{jobsummary}}</td>
         <td>{{joblocation}}</td>
         <td>{{contactdetails}}</td>
-        <td><a href="{{pathFor 'insertJobForm' id=_id}}" type="button" class="btn btn-primary">Apply Now</a>
+        <td colspan="3">
+          {{#if $eq userId currentUser._id}}
+          <a href="{{pathFor 'jobEdit'}}" type="button" class="btn btn-primary"><i class="fa fa-pencil-square-o"></i></a>
+          <a href="{{pathFor 'applicants'}}" type="button" class="btn btn-primary"><i class="fa fa-eye"></i></a>
+
+          {{else}}
+          <a href="{{pathFor 'insertJobForm' id=_id}}" type="button" class="btn btn-primary">Apply Now</a>
+          {{/if}}
         </td>
       </tr>
       {{/each}}

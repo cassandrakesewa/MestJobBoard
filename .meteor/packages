@@ -15,3 +15,7 @@ iron:router
 aldeed:autoform
 aldeed:collection2
 raix:handlebar-helpers
+cfs:gridfs
+cfs:standard-packages
+yogiben:autoform-file
+fortawesome:fontawesome

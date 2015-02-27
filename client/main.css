@@ -13,6 +13,9 @@ ul
   width: 250px !important;
 }
 
+td{
+  max-width: 230px;
+}
 
 .slideimg{
   width: 100%;
@@ -29,6 +32,11 @@ ul
 
 .center{
   width: 100%;
+}
+
+.imgsize{
+  width: 100%;
+  height: 230px !important;
 }
 
 footer{

@@ -1,0 +1,44 @@
+<template name="applicants">
+  <br/><br/><br/>
+
+  <div class="container">
+    <h3>Applicants</h3>
+    <div class="row">
+      {{#each applyjob}}
+      <div class="col-sm-6 col-sm-4">
+        <div class="thumbnail">
+         <img src=" {{getImageUrl picture}}" class="imgsize" alt="no image">
+
+         <div class="caption">
+          <h3>{{name}}</h3>
+          <p>Gender: {{gender}} &nbsp;&nbsp;&nbsp;Email: {{email}}</p>
+
+          <p><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#details-{{_id}}" role="button">Details</a> </p>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="modal fade" id="details-{{_id}}">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">{{name}}'s Details</h4>
+          </div>
+          <div class="modal-body">
+            <p>Date of Submission: {{lastCheckedOut}}</p>
+            <p>Education: {{education}}</p>
+            <p>{{experience}}</p>
+            <p>{{summary}}</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Done</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    {{/each}}
+  </div>
+</div>
+</template>
